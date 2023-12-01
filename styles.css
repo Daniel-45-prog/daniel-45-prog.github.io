@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Sora:wght@300&family=Teko:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.separator {
+    border: 1px solid #000;
+    margin: 40px 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    background-color: beige; 
+    color: #333;
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+}
+
+.head {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    height: 60px;
+    background: #5787c5;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.navbar a:hover {
+    background-color: rgb(240, 236, 236);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 60vh !important;
+    background-color: beige;
+    background-size: cover;
+}
+
+.tittle {
+    font-family: 'Teko', sans-serif;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+}
+
+.p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 5px;
+    border: 2px solid #5787c5;
+    color: #fff;
+    text-decoration: none;
+    background-color: #5787c5;
+}
+
+.btn_hover {
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    font-family: 'Teko', sans-serif;
+    margin: 0 10px;
+}
+
+.sau {
+    padding: 30px;
+    background-color: beige;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background-color: beige; 
+    box-shadow: 0.3 5 rem rgb(0, 0, 0);
+    margin: 2rem;
+}
+
+.box-container .box {
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #5787c5;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #5787c5;
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background-color: beige;
+}
+
+.price {
+    background-color: beige;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 20px;
+    background: beige; 
+    padding-bottom: 0;
+}
+
+.content .about {
+    background-color: beige;
+}
+
+.imagen-1 {
+    width: 350px;
+    height: 250px;
+    margin-right: 5px;
+}
+
+.imagen-2 {
+    width: 350px;
+    height: 250px;
+    margin-left: 5px;
+}
+
+.imagen-3 {
+    width: 350px;
+    height: 250px;
+    margin-left: 5px;
+}
+
+.redes1 {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+form {
+    background-color: #24253C;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 420px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+form h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 35px;
+}
+
+input {
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: #5787c5;
+    margin-bottom: 30px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        background-color: #ccc;
+    }
+    .main-content {
+        padding: 10px;
+    }
+    .btn-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+    header {
+        background-color: #ddd;
+    }
+    .main-content {
+        padding: 5px;
+    }
+    footer {
+        display: none;
+    }
+    .btn-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        font-size: 12px;
+    }
+    header {
+        background-color: beige;
+    }
+    .main-content {
+        padding: 2px;
+    }
+    .btn-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
